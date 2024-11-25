@@ -1,0 +1,7 @@
+<div class="container">
+  <h1 class="mb-3">Results</h1>
+  <div class="card mb-3 flex-row bg-secondary bg-opacity-10 p-3">You took:<b class="ms-1"><%=@score[:time]%> seconds</b></div>
+  <div class="card mb-3 flex-row bg-secondary bg-opacity-10 p-3"><%= @score[:message] %></div>
+  <div class="card mb-3 flex-row bg-secondary bg-opacity-10 p-3">You score:<b class="ms-1"><%=@score[:score]%> points</b></div>
+  <%= link_to "New game", new_path, class:"btn btn-primary" %>
+</div>
